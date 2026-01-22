@@ -1,5 +1,17 @@
 <!doctype html>
-<html lang="pt-br" class="light">
+<html lang="pt-br">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>DevCard</title>
+
+    <!-- aplica o tema ANTES do CSS -->
+    <script>
+      const theme = localStorage.getItem("theme");
+      if (theme === "light") {
+        document.documentElement.classList.add("light");
+      }
+    </script>
 
     <link rel="preconnect" href="https://fonts.googleapis.com" />
     <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin />
@@ -8,80 +20,86 @@
       rel="stylesheet"
     />
 
-    <meta charset="UTF-8" />
-    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
-    <title>DevCard</title>
-    <link
-      href="https://fonts.googleapis.com/css2?family=Inter:wght@400;600;700&family=Merriweather:wght@400;700&display=swap"
-      rel="stylesheet"
-    />
     <link rel="stylesheet" href="./style.css" />
   </head>
+
   <body>
     <div id="container">
       <div id="profile">
-        <img src="./assets/avatar.png" alt="imagem nao exibida"
-      />
-      <p>@marcosxl62</p>
+        <img src="" alt="" />
+        <p>@marcosxl62</p>
+      </div>
+
+      <div id="switch">
+        <button></button>
+        <span></span>
+      </div>
+
+      <ul>
+        <li>
+          <a href="https://www.instagram.com/marcosxl62/" target="_blank">
+            Me siga no instagram
+          </a>
+        </li>
+
+        <li>
+          <a
+            href="https://api.whatsapp.com/send/?phone=5562985132779"
+            target="_blank"
+          >
+            Me chame no whatsapp
+          </a>
+        </li>
+
+        <li>
+          <a href="https://github.com/marcosxl62" target="_blank">
+            Ver meu portfólio
+          </a>
+        </li>
+
+        <li>
+          <a href="https://discord.gg/nYGwf7DE" target="_blank">
+            Comunidade no Discord
+          </a>
+        </li>
+      </ul>
+
+      <div id="social-links">
+        <a href="https://www.instagram.com/marcosxl62/" target="_blank">
+          <ion-icon name="logo-instagram"></ion-icon>
+        </a>
+
+        <a
+          href="https://api.whatsapp.com/send/?phone=5562985132779"
+          target="_blank"
+        >
+          <ion-icon name="logo-whatsapp"></ion-icon>
+        </a>
+
+        <a href="https://github.com/marcosxl62" target="_blank">
+          <ion-icon name="logo-github"></ion-icon>
+        </a>
+
+        <a href="https://discord.gg/nYGwf7DE" target="_blank">
+          <ion-icon name="logo-discord"></ion-icon>
+        </a>
+      </div>
+
+      <footer>
+        Feito por
+        <a href="https://github.com/marcosxl62" target="_blank"> marcosxl62 </a>
+      </footer>
     </div>
-<div id="switch" id="switch()">
 
-  <button></button>
+    <script
+      type="module"
+      src="https://unpkg.com/ionicons@7.1.0/dist/ionicons/ionicons.esm.js"
+    ></script>
+    <script
+      nomodule
+      src="https://unpkg.com/ionicons@7.1.0/dist/ionicons/ionicons.js"
+    ></script>
 
-  <span></span>
-
-
-</div>
-
-
-    <ul>
-
-      <li><a href="https://www.instagram.com/marcosxl62/" target="_blank">Me siga no instagram</a></li>
-
-      <li>
-        <a href="https://api.whatsapp.com/send/?phone=5562985132779&text&type=phone_number&app_absent=0" target="_blank">Me chame no whatsapp</a>
-      </li>
-
-      <li><a href="https://github.com/marcosxl62"
-        target="_blank">Ver meu portfólio</a>
-      </li>
-      
-      <li>
-        <a href="https://discord.gg/nYGwf7DE"
-        target="_blank">Comunidade no Discord</a>
-      </li>
-
-    </ul>
-    
-    <div id="social-links">
-
-      <a href="https://www.instagram.com/marcosxl62/" target="_blank"><ion-icon name="logo-instagram"></ion-icon>
-      </a>
-
-            <a href="https://api.whatsapp.com/send/?phone=5562985132779&text&type=phone_number&app_absent=0" target="_blank"><ion-icon name="logo-whatsapp"></ion-icon></a>
-
-
-                  <a href="https://github.com/marcosxl62" target="_blank"><ion-icon name="logo-github"></ion-icon>
-                  </a>
-
-                              <a href="https://discord.gg/nYGwf7DE" target="_blank"><ion-icon name="logo-discord"></ion-icon></a>
-
-
-
-</div>
-
-
-
-<footer>
-
-  Feito por <a href="https://github.com/marcosxl62" target="_blank">marcosxl62</a>
-
-</footer>
-
-
-    <script type="module" src="https://unpkg.com/ionicons@7.1.0/dist/ionicons/ionicons.esm.js"></script>
-<script nomodule src="https://unpkg.com/ionicons@7.1.0/dist/ionicons/ionicons.js"></script>
-
-<script src="./script.js"></script>
+    <script src="./script.js"></script>
   </body>
 </html>
